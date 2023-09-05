@@ -1,0 +1,133 @@
+html{
+    font-family: sans-serif;
+}
+
+.header{
+    text-align: center;
+    margin: auto;
+}
+
+.header_logo{
+    width: 3em;
+    height: auto;
+}
+
+.header_nav{
+    background-color: #0c0000;
+    display: none;
+}
+
+ul {
+    margin: 0;
+}
+
+.header_nav ul{
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header_nav a{
+    color: #f3c1c1;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover{
+    background-color: color-mix(in srgb, rgb(239, 9, 9), #ffffff 50%);
+    color: #fff;
+}
+
+#hamburguer{
+    background-color: #850303;
+    color: #0D0D0D;
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.header_nav.show {
+    display: block;
+}
+
+@media screen and (min-width: 48em){/*768px maior que*/
+
+    #hamburguer{
+        display: none;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #181818;
+    }
+
+
+    .header_logo{
+        margin-left: 2em;
+    }
+
+    .header_nav{
+        display: block;
+    }
+
+    .header_nav ul{
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header_nav li{
+        display: inline-block;
+    }
+
+    .header_nav a{
+        border-radius: 5px;
+    }
+    
+    
+    .header_nav a:hover{
+        background-color: #5d0000;
+        color: #f50707;
+    }
+
+    .container li{
+        display: inline-block;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+}
+
+.image{
+    background-image: url("./imagem_fundo/lipstick_teste1.jpeg");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.rodape {
+    background-color: #5d0000;
+    color: #ffffff;
+    padding: 2em 0 2em 0;
+}
+
+.rodape ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    margin: 0em;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_one {
+    text-transform: uppercase;
+}
